@@ -20,9 +20,16 @@ String sayHi(String name, int age, [String contry = 'cuba']) =>
     "Hello $name, you are $age years old and from $contry";
 //option 어쩌고인데 얜 별로 안쓰인다. 네임 어규먼트 대신에 초기값을 넣어주는 방식이다.
 
+String capitalizeName(String? name) => name?.toUpperCase() ?? 'anon';
+//?은 안철수다 null일수도 있고 string일수도 있다. '??'은 삼항연산자와 같은 역할을 한다.
+
+List<int> reverseListOfNumbers(List<int> list) {
+  var reversed = list.reversed;
+  return reversed.toList();
+}
+
 void main() {
-  print(sayHi(
+  print(capitalizeName(
     'nico',
-    10,
   ));
 }

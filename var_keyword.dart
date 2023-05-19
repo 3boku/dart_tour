@@ -44,6 +44,7 @@ void main() {
   var hi = "Hello, nice to meet you my name is $name1 and i\'m ${age + 2}";
 
   /// 변수를 쓰고 싶으면 '$'뒤에 쓰면 된다. 그리고 {}안에 변수를 쓰면 연산을 할수있다. '\'은 이스케이프문이다.
+
   var oldfreinds = ["lynn", 'nico'];
   var newfreinds = [
     "liyuu",
@@ -59,6 +60,7 @@ void main() {
   };
 
   ///따로 자료형을 지정해주지 않아도 map은 알아서 자료형을 찾아준다
+
   Map<List<int>, bool> ew = {
     [1, 2, 3, 4]: true,
   };
